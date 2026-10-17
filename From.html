@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From.html</title>
+</head>
+<body>
+      <H3>From.html</H3>
+    <br>
+    <table border="1"cellpadding="3"width="250" cellspacing="5"           
+    <tr>
+        <td>
+             <h4>Formulir Pendaftaraan</h4>
+             <style>
+                table {
+                    width: 35%;
+                    border: 1px double rgb(30, 144, 255);
+                    border-radius: 10px;
+                   background-color: rgba(167, 231, 215, 0.856);
+                }
+                body { 
+                    background-color: rgb(194, 201, 201);
+                    font-family: inherit;
+                }
+        h4 {
+            margin-top: 0px;
+            margin-bottom: 5px;
+            background-color: rgb(30, 144, 255);
+            padding: 10px;
+        }
+        body {
+          background-color: rgb(194, 201, 201);
+                    font-family: inherit;
+        }
+        .formulir {
+            width: 500px;
+            min-height: 600px;
+            padding: 10px;
+            box-sizing: content-box;
+        }
+            </style>  
+            <br>   
+<form action="/proses" method="post">
+    <label for="nama"> Nama Lengkap :</label>
+    <br>
+    <input type="text" id="nama" name="nama" placeholder="Masukan Nama" required>
+    <br><br>
+    <label for="nama"> Email :</label>
+    <br>
+    <input type="email" id="email" name="email" placeholder="nama@gmail.com" required>
+    <br><br>
+     <label for="nama"> Kata Sandi :</label>
+    <br>
+    <input type="password" id="Sandi" name="Sandi" placeholder="***********" required>
+    <br><br>
+     <label for="nama"> Umur :</label>
+    <br>
+    <input type="number" id="umur" name="umur" placeholder="Masukan Umur" required>
+     <br><br>
+     <label for="nama"> Tanggal Lahir :</label>
+    <br>
+    <input type="date" id="tanggal" name="tanggal" required>
+    <br><br>
+    <p>Jenis Kelamin :</p>
+    <input type="radio" id="pria" name="gender" value="pria" required> 
+    <label for="pria">Laki-laki</label> 
+    <style>
+        p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    </style>
+    <br>
+     <input type="radio" id="perempuan" name="gender" value="perempuan" required> 
+    <label for="pria">Perempuan</label> 
+    <br><br>
+    <p>Hobi</p>
+    <input type="checkbox" id="coding" name="hobi" value="coding" required>
+    <label for="coding">Coding</label>
+    <br>
+    <input type="checkbox" id="gaming" name="hobi" value="gaming" required>
+    <label for="coding">Gaming</label>
+    <br>
+    <input type="checkbox" id="olahraga" name="hobi" value="olahraga" required>
+    <label for="coding">Olahraga</label>
+    <br><br>
+    <label for="jurusan">Jurusan :</label>
+    <select id="jurusan" name="jurusan">
+        <option value="">-- Pilih --</option>
+        <option value="tkj">Teknik Komputer Jaringan</option>
+        <option value="rpl">Rekayasa Perangkat Lunak</option>
+        <option value="SI">Sistem Informasi</option>
+    </select>
+    <br><br>
+    <label for="Alamat">Alamat :</label>
+    <br>
+    <textarea id="alamat" name="alamat" rows="4" cols="30"></textarea>
+    <br><br>
+    <label for="foto">Foto</label>
+    <br>
+    <input type="file" id="foto" name="foto" accept="image/*">
+    <br><br>
+     <label for="website"> Website :</label>
+    <br>
+    <input type="website" id="web" name="web" placeholder="https//example.com" required>
+    <br><br>
+    <button type="submit">Kirim</button>
+    <button type="reset">Reset</button>
+</form>
+</body>
+</html>
